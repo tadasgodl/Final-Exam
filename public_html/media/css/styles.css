@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+}
+
+h2, h3, h4 {
+    margin: 10px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+tr, td, th {
+    margin: 10px;
+    padding: 10px;
+}
+
+
+/*######################
+##  Form
+########################*/
+
+.form-section {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+form {
+    width: 400px;
+    margin: 20px 0;
+    background-color: darkgray;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 5px 5px 10px 4px #000000;
+}
+
+form p {
+    font-weight: bold;
+}
+
+label {
+    font-family: Arial;
+}
+
+input {
+    padding: 7px;
+    margin: 5px;
+    min-width: 200px;
+}
+
+textarea {
+    padding: 20px;
+}
+
+button {
+    padding: 7px;
+    margin: 5px;
+    background: crimson;
+    color: white;
+    width: 150px;
+    border: 2px solid white;
+    font-family: 'Bangers', cursive;
+    cursor: pointer;
+}
+
+button:hover {
+    background: white;
+    color: crimson;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: orangered;
+}
+
+.modal .close {
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+    font-size: .8em;
+}
+
+/*######################
+##  Navigation
+########################*/
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    width: 100%;
+    background-color: crimson;
+    border-bottom: 1px solid darkgray;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    max-width: 800px;
+    padding: 20px;
+    font-size: 40px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+}
+
+a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.4s;
+    font-family: 'Bungee Outline', cursive;
+}
+
+a:hover {
+    color: darkgray;
+}
+
+
+/*######################
+##  Index Page
+########################*/
+
+.heading {
+    font-size: 70px;
+    color: crimson;
+    font-family: 'Bungee Outline', cursive;
+}
+
+.heading:hover {
+    cursor: default;
+}
+
+.heading-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    background-image: url("../images/gym.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 1px solid darkgray;
+}
+
+.ads-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    height: 400px;
+}
+
+.width-limit {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+}
+
+.advertisement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    border: 1px solid gray;
+    box-shadow: 5px 5px 15px 0px #000000;
+    transition: 0.4s;
+}
+
+.advertisement:hover {
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+
+.ad-image-container {
+    width: 100%;
+    height: 40%;
+}
+
+.ad-image {
+    width: 100%;
+    height: 100%;
+}
+
+.ad-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60%;
+}
+
+.title {
+    font-size: 15px;
+    padding: 10px 0;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+}
+
+.text {
+    padding: 25px 10px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.ad-readmore {
+    font-size: 10px;
+    color: darkslategrey;
+}
+
+.ad-readmore:hover {
+    cursor: pointer;
+}
+
+.map {
+    height: 300px;
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 100%;
+    background-color: darkgray;
+    color: white;
+}
