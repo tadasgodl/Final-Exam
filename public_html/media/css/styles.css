@@ -167,6 +167,7 @@ a:hover {
 ##  Index Page
 ########################*/
 
+
 .heading {
     font-size: 70px;
     color: crimson;
@@ -312,5 +313,17 @@ footer {
     .advertisement {
         width: 75%;
         height: 500px;
+    }
+    .title {
+        font-size: 30px;
+    }
+    .text {
+        font-size: 18px;
+    }
+    .ad-readmore {
+        font-size: 12px;
+    }
+    footer {
+        height: 35px;
     }
 }
