@@ -19,7 +19,7 @@ class Navigation extends View
 
         if (App::$session->getUser()) {
             return $nav + [
-                    App::$router::getUrl('/user/feedback') => 'Feedback',
+                    App::$router::getUrl('feedback') => 'Feedback',
                     App::$router::getUrl('logout') => 'Logout',
                 ];
         } else {

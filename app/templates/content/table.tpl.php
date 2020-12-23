@@ -5,12 +5,12 @@
         <?php endforeach; ?>
     </tr>
 </table>
-<!-- Update Modal (Popup)-->
-<?php if (isset($data['forms']['update'])): ?>
+
+<?php if (isset($data['forms']['create'])): ?>
     <div id="update-modal" class="modal">
         <div class="wrapper">
             <span class="close">&times;</span>
-            <?php print $data['forms']['update']; ?>
+            <?php print $data['forms']['create']; ?>
         </div>
     </div>
 <?php endif; ?>

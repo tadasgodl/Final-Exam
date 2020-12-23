@@ -1,3 +1,7 @@
+/*######################
+##  Global settings
+########################*/
+
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
 
@@ -7,12 +11,18 @@
     padding: 0;
 }
 
-body {
-    background-color: white;
-}
-
 h2, h3, h4 {
     margin: 10px;
+}
+
+
+/*######################
+##  Table
+########################*/
+
+.table-section {
+    display: flex;
+    justify-content: center;
 }
 
 table, th, td {
@@ -36,11 +46,17 @@ tr, td, th {
     padding-top: 50px;
 }
 
+.feedback-title {
+    padding: 50px 0px;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+}
+
 form {
     width: 400px;
     margin: 20px 0;
     background-color: darkgray;
-    padding: 20px;
+    padding: 30px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -244,6 +260,10 @@ a:hover {
     height: 300px;
     width: 100%;
 }
+
+/*######################
+##  Footer
+########################*/
 
 footer {
     display: flex;

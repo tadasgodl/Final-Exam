@@ -141,6 +141,18 @@ function validate_no_spec_chars(string $field_value, array &$field): bool {
     return true;
 }
 
+function validate_char_length(string $field_value, array &$field, array $params): bool {
+    if ($field_value < $params['min'] || $field_value > $params['max']) {
+        $field['error'] = strtr('Message must not exceed @max characters!', [
+            '@max' => $params['max']
+        ]);
+
+        return false;
+    }
+
+    return true;
+}
+
 
 /**
  * Check if selected value is one of the possible options in options array

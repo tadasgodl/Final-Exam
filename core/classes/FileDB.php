@@ -283,4 +283,31 @@ class FileDB
 
         return false;
     }
+
+    /**
+     * Return first row_id of the table
+     *
+     * @param string $table_name
+     * @param array $conditions
+     * @return false|array
+     */
+    public function getRowIdWhere(string $table_name, array $conditions = [])
+    {
+        foreach ($this->data[$table_name] ?? [] as $row_id => $row) {
+            $found = true;
+
+            foreach ($conditions as $condition_id => $condition_value) {
+                if ($row[$condition_id] !== $condition_value) {
+                    $found = false;
+                    break;
+                }
+            }
+
+            if ($found) {
+                return $row_id;
+            }
+        }
+
+        return false;
+    }
 }
