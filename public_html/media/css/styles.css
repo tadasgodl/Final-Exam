@@ -274,3 +274,43 @@ footer {
     background-color: darkgray;
     color: white;
 }
+
+/*######################
+##  Media queries
+########################*/
+
+@media screen and (max-width: 1050px) {
+    .heading {
+        font-size: 50px;
+    }
+    .heading-bg {
+        height: 150px;
+    }
+    .map {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    a {
+        font-size: 20px;
+    }
+    .heading {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .ads-container {
+        height: 1600px;
+    }
+    .width-limit {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .advertisement {
+        width: 75%;
+        height: 500px;
+    }
+}
