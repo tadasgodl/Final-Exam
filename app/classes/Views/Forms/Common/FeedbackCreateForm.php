@@ -19,7 +19,11 @@ class FeedbackCreateForm extends Form
                     'label' => 'Write us',
                     'type' => 'textarea',
                     'validators' => [
-                        'validate_field_not_empty'
+                        'validate_field_not_empty',
+                        'validate_char_length' => [
+                            'min' => 1,
+                            'max' => 500
+                        ]
                     ],
                     'extra' => [
                         'attr' => [

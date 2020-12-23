@@ -17,6 +17,10 @@ class RegisterForm extends Form
                         'validate_field_not_empty',
                         'validate_no_spec_chars',
                         'validate_not_numeric',
+                        'validate_char_length' => [
+                            'min' => 1,
+                            'max' => 50
+                        ]
                     ],
                     'extra' => [
                         'attr' => [
@@ -31,6 +35,10 @@ class RegisterForm extends Form
                         'validate_field_not_empty',
                         'validate_no_spec_chars',
                         'validate_not_numeric',
+                        'validate_char_length' => [
+                            'min' => 1,
+                            'max' => 50
+                        ]
                     ],
                     'extra' => [
                         'attr' => [
